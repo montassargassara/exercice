@@ -1,0 +1,122 @@
+/* Styles pour la page produit */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  header img {
+    max-width: 100px; /* Définissez la largeur maximale de votre logo */
+    height: auto; /* Assurez-vous que la hauteur s'ajuste automatiquement pour maintenir les proportions */
+    display: block; /* Pour supprimer l'espace sous l'image */
+    margin-left: 0 auto; /* Pour centrer l'image horizontalement dans l'en-tête */
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+ /* Styles for the product section */
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Add some margin between each product */
+}
+
+/* Style for product images */
+.product img {
+  width: 200px; /* Set the desired width for all product images */
+  height: 230px; /* Allow the height to adjust to maintain aspect ratio */
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: white;
+}
+
+/* Styles for the product info */
+.product-info {
+  width: 200px; /* Set the desired width for all product images */
+  height: 230px; /* Allow the height to adjust to maintain aspect ratio */
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-info h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-info .price {
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styles for the footer and social links (no change) */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}

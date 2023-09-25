@@ -1,0 +1,104 @@
+/* Styles pour la page d'accueil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  /* Style pour le logo */
+ header img {
+    max-width: 100px; /* Définissez la largeur maximale de votre logo */
+    height: auto; /* Assurez-vous que la hauteur s'ajuste automatiquement pour maintenir les proportions */
+    display: block; /* Pour supprimer l'espace sous l'image */
+    margin-left: 0 auto; /* Pour centrer l'image horizontalement dans l'en-tête */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .text-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .image {
+    flex: 1;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Styles pour le pied de page */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  /* Styles pour les icônes de médias sociaux dans le footer */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 10px;
+}
+
+/* Styles pour les icônes d'icônes de médias sociaux (remplacez les images par les vôtres) */
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
