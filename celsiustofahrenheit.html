@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="index.css">
     <style>
         input[type=text], select {
           width: 100%;
@@ -37,6 +37,14 @@
           padding: 20px;
         }
         </style>
+        <script>
+            function CtoF() {
+              document.getElementById("F").value = (document.getElementById("C").value*9/5)+32;
+            }
+            function FtoC() {
+             document.getElementById("C").value = (document.getElementById("F").value-32)*5/9;
+            }
+            </script>
 </head>
 <body>
     <header>
@@ -53,19 +61,14 @@
     <div>
         <h3>convertor</h3>
           <label>celsius </label>
-          <input type="text" id="fname">
+          <input type="text" id="C">
       
           <label>fahrenheit</label>
-          <input type="text" id="lname">
+          <input type="text" id="F">
           </select>
         
-          <button>C to F</button>
-          <button>F to C</button>
+          <button type="button" onclick="CtoF()">C to F</button>
+          <button type="button" onclick="FtoC()">F to C</button>
       </div>
-      
-    <script> 
-    function myFunction() {
-        document.getElementById("demo").innerHTML = "Paragraph changed."; }
-    </script>
 </body>
 </html>
