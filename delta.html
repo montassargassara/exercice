@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Résoudre(){
+            let a= document.getElementById("a").value;
+            let b= document.getElementById("b").value;
+            let c= document.getElementById("c").value;
+            let delta =b**2 - 4*a*c ;
+            document.getElementById("demo").innerHTML = "delta = "+delta;
+            if(delta > 0){
+                let x1=-b-Math.sqrt(delta)/2*a;
+                let x2=-b+Math.sqrt(delta)/2*a;
+                document.getElementById("demo").innerHTML = "2 solution : x1 ="+x1+"x2 ="+x2;
+            }else if (delta == 0) {
+                let x= - b / 2 * a;
+                document.getElementById("demo").innerHTML = " solution : x1=x2 ="+x;
+            } else{
+                document.getElementById("demo").innerHTML = "pas de solution";
+            }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <label>X<sup>2</sup></label><input type="text" id="a"><label>+</label><label>X</label><input type="text" id="b"><label>+</label><input type="text" id="c"><label>=</label><label>0</label>
+    <button onclick="Résoudre()">Résoudre</button>
+    <p id="demo"></p>
+    
+</body>
+</html>

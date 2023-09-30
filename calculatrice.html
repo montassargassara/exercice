@@ -34,7 +34,7 @@ input[type=text]:focus {
         }
         function calculate() {
             try {
-                var result = eval(document.getElementById("demo").value);
+                let result = eval(document.getElementById("demo").value);
                 document.getElementById("demo").value = result;
             } catch (error) {
                 document.getElementById("demo").value = "Erreur";
