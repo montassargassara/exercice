@@ -5,53 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculatrice</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        text-align: center;
-    }
+        button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
 
-    table {
-        margin: 0 auto;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-collapse: collapse;
-    }
-
-    table td {
-        padding: 10px;
-        border: 1px solid #ccc;
-    }
-
-    input[type="text"] {
-        width: 100%;
-        padding: 10px;
-        font-size: 18px;
-        text-align: right;
-    }
-
-    button {
-        width: 50px;
-        height: 50px;
-        font-size: 18px;
-        margin: 5px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #45a049;
-    }
-
-    #CE {
-        background-color: #f44336;
-    }
-
-    #CE:hover {
-        background-color: #d32f2f;
-    }
+input[type=text]:focus {
+  background-color: lightblue;
+}
     </style>
     <script>
         function one() {
@@ -59,18 +33,17 @@
             document.getElementById("demo").value += event.target.id ;
         }
         function calculate() {
-        try {
-            var result = eval(document.getElementById("demo").value);
-            document.getElementById("demo").value = result;
-        } catch (error) {
-            // Gérer les erreurs de calcul ici, par exemple en affichant un message d'erreur.
-            document.getElementById("demo").value = "Erreur";
+            try {
+                var result = eval(document.getElementById("demo").value);
+                document.getElementById("demo").value = result;
+            } catch (error) {
+                document.getElementById("demo").value = "Erreur";
+            }
         }
-    }
-    function clearInput() {
-        document.getElementById("demo").value = "";
-    }
-        </script>
+        function clearInput() {
+            document.getElementById("demo").value = "";
+        }
+    </script>
 </head>
 <body>
 <table>
