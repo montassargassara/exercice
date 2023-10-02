@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription au match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inscription au match</h1>
+    <form id="inscriptionForm">
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <span class="error" id="nomError"></span>
+            <span class="success" id="nomSuccess"></span>
+        </div>
+        <div>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+            <span class="error" id="prenomError"></span>
+            <span class="success" id="prenomSuccess"></span>
+        </div>
+        <div>
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="text" id="telephone" name="telephone" required>
+            <span class="error" id="telephoneError"></span>
+            <span class="success" id="telephoneSuccess"></span>
+        </div>
+        <div>
+            <label for="dateMatch">Date du match :</label>
+            <input type="date" id="dateMatch" name="dateMatch" required>
+            <span class="error" id="dateMatchError"></span>
+            <span class="success" id="dateMatchSuccess"></span>
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+            <span class="success" id="emailSuccess"></span>
+        </div>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+    <script src="inscription.js"></script>
+</body>
+</html>
